@@ -5,7 +5,6 @@
 
 # Tela de Administracao
  - CRUD de imagens (icones)
- - 
 
 # Tela do Pesquisador
 
@@ -17,7 +16,6 @@
  
 - Abrir teste existente
     - Ao abrir um teste, o pesquisador podera passar pelas telas preenchidas ou exportar para um .csv
-    - 
 
 # Tela do Participante
     - Exibicao do texto de instrucoes previamente cadastrado
