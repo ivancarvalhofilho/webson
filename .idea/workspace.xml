@@ -7,150 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsp/login/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webson.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webson.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDBase.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ivy-2.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ivy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/asm-7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/asm-analysis-7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/asm-tree-7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/asm-util-7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/avalon-framework-4.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cglib-3.2.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.0-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.5-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.5-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.2-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.2-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-compress-1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-csv-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-dbcp2-2.7.0-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-dbcp2-2.7.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-dbcp2-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-digester-2.1-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-digester-2.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-digester-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang-2.6-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang-2.6-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.1.1-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.1.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-pool2-2.7.0-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-pool2-2.7.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-pool2-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/disruptor-3.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/groovy-all-2.4.7-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/groovy-all-2.4.7-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/groovy-all-2.4.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gson-2.7-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gson-2.7-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gson-2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itext-2.1.7-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itext-2.1.7-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itext-2.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itextpdf-5.5.3-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itextpdf-5.5.3-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itextpdf-5.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-annotations-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-core-2.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-databind-2.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-dataformat-xml-2.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-dataformat-yaml-2.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-module-jaxb-annotations-2.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jansi-1.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jasperreports-6.3.0-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jasperreports-6.3.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jasperreports-6.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.mail-1.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.persistence-2.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jboss-jms-api_1.1_spec-1.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jeromq-0.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jsp-api-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jstl-1.2-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kafka-clients-0.9.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j-1.2.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j-core-2.6.2-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j-core-2.6.2-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j-core-2.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/logkit-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lz4-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.17-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.osgi.core-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-3.10.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-3.10.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-ooxml-3.10.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-ooxml-3.10.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-ooxml-schemas-3.10.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/servlet-api-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-api-1.7.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/snakeyaml-1.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/snappy-java-1.1.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stax-api-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stax2-api-3.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/woodstox-core-5.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/ant-deploy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/retrieve.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conf/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Controller/BaseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Controller/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Elementos/Componente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Elementos/Modulo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Elementos/Permissoes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Model/LoginModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Services/LoginService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Login/Services/SegurancaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Usuario/Controller/CadastroUsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Usuario/Controller/ListagemUsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Usuario/Entity/Tipo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Usuario/Entity/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Administrativo/Usuario/Services/UsuarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/Logo_Ufla.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/RelatorioSample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/atribuicao.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/atribuicao.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/sample.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/sample.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Relatorios/sample.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/ServicosWeb/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/ServicosWeb/ServicoWebListaUsuarios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/ServicosWeb/ServicoWebLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Test/Dados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Test/TestReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Test/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Util/DataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Util/EmailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Util/MensagemErro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Util/ServiceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Util/Validation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,6 +65,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.451" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.451" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web/login" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="webson">
@@ -272,5 +136,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/HomeController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
