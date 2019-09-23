@@ -1,9 +1,8 @@
 package controller;
 
-import domain.User;
+import domain.Researcher;
 import services.LoginService;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,13 +16,13 @@ public class LoginController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 
-		String userName = request.getParameter("name");
-		String userPass = request.getParameter("password");
+		String researcherName = request.getParameter("name");
+		String researcherPass = request.getParameter("password");
 
 		LoginService loginService = new LoginService();
-		User loggedUser = loginService.makeLogin(userName, userPass);
-		if(loggedUser != null){
-			session.setAttribute("loggedUser", loggedUser);
+		Researcher loggedResearcher = loginService.makeLogin(researcherName, researcherPass);
+		if(loggedResearcher != null){
+			session.setAttribute("loggedResearcher", loggedResearcher);
 			redirect(response, "home");
 			return;
 		}

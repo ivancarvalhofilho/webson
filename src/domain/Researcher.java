@@ -1,6 +1,6 @@
 package domain;
 
-public class User {
+public class Researcher {
 	Long id;
 	String name;
 	String password;

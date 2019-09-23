@@ -1,7 +1,6 @@
 package controller;
 
-import com.sun.deploy.net.HttpRequest;
-import domain.User;
+import domain.Researcher;
 import services.LoginService;
 
 import javax.servlet.RequestDispatcher;
@@ -15,15 +14,15 @@ import java.io.IOException;
 public class BaseController extends HttpServlet {
 	
 	void checkCredentials (HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException {
-		User loggedUser = (User) session.getAttribute("loggedUser");
+		Researcher loggedResearcher = (Researcher) session.getAttribute("loggedResearcher");
 
-		Long userId = loggedUser.getId();
-		if(userId == null){
+		Long researcherId = loggedResearcher.getId();
+		if(researcherId == null){
 			response.sendRedirect("login");
 		}
 
 		LoginService loginService = new LoginService();
-		if(!loginService.checkUserExists(userId)){
+		if(!loginService.checkResearcherExists(researcherId)){
 			response.sendRedirect("login");
 		}
 	}

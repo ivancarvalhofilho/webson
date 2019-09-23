@@ -1,28 +1,28 @@
 package services;
 
-import domain.User;
+import domain.Researcher;
 
 public class LoginService {
 
-	public static final long USER_ID_MOCK = 1L;
-	public static final String USER_NAME_MOCK = "Ivan";
+	public static final long RESEARCHER_ID_MOCK = 1L;
+	public static final String RESEARCHER_NAME_MOCK = "Ivan";
 
-	public User makeLogin(String name, String password) {
+	public Researcher makeLogin(String name, String password) {
 //		TODO: ir no banco buscar usuario
 		
 //		mock
-		User loggedUser = null;
+		Researcher loggedResearcher = null;
 		if(name.equals("Ivan") && !password.equals("")){
-			loggedUser = new User();
-			loggedUser.setId(USER_ID_MOCK);
-			loggedUser.setName(USER_NAME_MOCK);
+			loggedResearcher = new Researcher();
+			loggedResearcher.setId(RESEARCHER_ID_MOCK);
+			loggedResearcher.setName(RESEARCHER_NAME_MOCK);
 		}
 		
-		return loggedUser;		
+		return loggedResearcher;		
 	}
 	
-	public Boolean checkUserExists(Long userId){
+	public Boolean checkResearcherExists(Long researcherId){
 //		TODO: ir no banco
-		return userId.equals(USER_ID_MOCK);
+		return researcherId.equals(RESEARCHER_ID_MOCK);
 	}
 }
