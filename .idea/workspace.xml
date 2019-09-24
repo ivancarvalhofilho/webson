@@ -7,13 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/AdmComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/TestsComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsp/footer/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsp/header/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/erro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/erro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/vendor/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/selecao.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/selecao.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +53,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,21 +144,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/HomeController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

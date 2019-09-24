@@ -27,7 +27,7 @@ public class BaseController extends HttpServlet {
 		}
 	}
 	
-	void redirect(HttpServletResponse response, String url) throws IOException {
+	protected void redirect(HttpServletResponse response, String url) throws IOException {
 		response.sendRedirect(url);
 	}
 	

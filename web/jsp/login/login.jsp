@@ -25,7 +25,7 @@
 			justify-content: center;
 			align-items: center;
 			background: white;
-			border: 1px solid black;
+			border: 1px solid #00000057;
 			border-radius: 1em;
 			flex-flow: column;
 			width: 400px;
