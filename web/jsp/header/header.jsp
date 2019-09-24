@@ -33,7 +33,7 @@
 		bottom: 8px !important;
 	}
 	.menu-bar > span {
-		transition: 0.3	s;
+		transition: 0.25s;
 		background: darkslategray;
 		color: white;
 		border-top-left-radius: 7px;

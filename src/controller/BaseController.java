@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class BaseController extends HttpServlet {
 	
-	void checkCredentials (HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException {
+	protected void checkCredentials(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException {
 		Researcher loggedResearcher = (Researcher) session.getAttribute("loggedResearcher");
 
 		Long researcherId = loggedResearcher.getId();
@@ -31,7 +31,7 @@ public class BaseController extends HttpServlet {
 		response.sendRedirect(url);
 	}
 	
-	void dispatchWithParams(HttpServletRequest request, HttpServletResponse response, String url) throws ServletException, IOException {
+	protected void dispatchWithParams(HttpServletRequest request, HttpServletResponse response, String url) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
 	}

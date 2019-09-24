@@ -38,11 +38,11 @@
 		$("#content").load(component);
 	};
 	
-	function changeContainer (container) {
+	function changeContainer (component) {
 		$(".menu-bar > span").removeClass("active-menu");
 		$(this).addClass("active-menu");
-		changeComponent(container);
-		$("#content").load(component);
+		
+		changeComponent(component);
 	};
 
 	$(document).ready( function () {

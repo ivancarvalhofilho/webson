@@ -1,4 +1,4 @@
-        </div> <!-- /container -->
+        </div> <!-- /component -->
 
 
         <!-- Bootstrap core JavaScript
