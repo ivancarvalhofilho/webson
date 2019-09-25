@@ -16,8 +16,6 @@ public class TestsContainer extends BaseController {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		checkCredentials(request, response, request.getSession());
-
 		request.setAttribute("errorMsg", "login inválido");
 		dispatchWithParams(request, response, "jsp/tests/testContainer.jsp");
 	}

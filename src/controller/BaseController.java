@@ -13,20 +13,6 @@ import java.io.IOException;
 
 public class BaseController extends HttpServlet {
 	
-	protected void checkCredentials(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException {
-		Researcher loggedResearcher = (Researcher) session.getAttribute("loggedResearcher");
-
-		Long researcherId = loggedResearcher.getId();
-		if(researcherId == null){
-			response.sendRedirect("login");
-		}
-
-		LoginService loginService = new LoginService();
-		if(!loginService.checkResearcherExists(researcherId)){
-			response.sendRedirect("login");
-		}
-	}
-	
 	protected void redirect(HttpServletResponse response, String url) throws IOException {
 		response.sendRedirect(url);
 	}

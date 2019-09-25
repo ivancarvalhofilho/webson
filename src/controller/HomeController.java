@@ -10,14 +10,10 @@ import java.io.IOException;
 public class HomeController extends BaseController {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		checkCredentials(request, response, request.getSession());
-		
 		response.sendRedirect("jsp/home");
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		checkCredentials(request, response, request.getSession());
-
 		response.sendRedirect("jsp/home/home.jsp");
 	}
 }

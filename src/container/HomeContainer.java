@@ -15,8 +15,6 @@ public class HomeContainer extends BaseController {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		checkCredentials(request, response, request.getSession());
-
 		redirect(response, "jsp/home/homeContainer.jsp");	
 	}
 }
