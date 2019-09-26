@@ -20,7 +20,18 @@
 		top: 30px;
 		right: 50px;
 		font-size: 40px;
+		animation: textGradient 1.5s linear infinite;
+		background: linear-gradient(230deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
+		background-size: 50% 100%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
+	
+	@keyframes textGradient {
+		0%{background-position: 0% 50%;}
+		100%{background-position: 100% 50%;}
+	}
+	
 	.menu-bar {
 		margin-left: 40px;
 	}
@@ -34,7 +45,11 @@
 	}
 	.menu-bar > span {
 		transition: 0.25s;
-		background: darkslategray;
+		animation: textGradient 1.5s linear infinite;
+		/*background: darkslategray;*/
+		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
+		background-size: 50% 100%;
+		
 		color: white;
 		border-top-left-radius: 7px;
 		border-top-right-radius: 7px;
@@ -47,7 +62,7 @@
 </style>
 
 <div class="header">
-	<div class="logo">Projeto Web</div>
+	<div class="logo">Trabalho de webson</div>
 	<div class="menu-bar">
 		<span onclick="changeContainer.call(this, CONTAINERS.home)" class="active-menu">Home</span>
 		<span onclick="changeContainer.call(this, CONTAINERS.administrator)">Adminstração</span>
