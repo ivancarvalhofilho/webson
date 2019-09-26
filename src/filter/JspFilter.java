@@ -25,7 +25,14 @@ public class JspFilter implements Filter {
 		String path = ((HttpServletRequest) req).getRequestURI();
 		if(!(path.equals("/web/jsp/login/login.jsp")
 				|| path.equals("/web/login"))){
-			checkCredentials((HttpServletRequest)req, (HttpServletResponse) resp, ((HttpServletRequest)req).getSession());
+			if(checkCredentials(
+					(HttpServletRequest)req,
+					(HttpServletResponse) resp,
+					((HttpServletRequest)req).getSession())){
+				chain.doFilter(req, resp);
+			}
+		} else {
+			chain.doFilter(req, resp);
 		}
 	}
 

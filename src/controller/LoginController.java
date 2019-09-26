@@ -29,7 +29,7 @@ public class LoginController extends BaseController {
 
 		response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 		request.setAttribute("errorMsg", "login inválido");
-		dispatchWithParams(request, response,"login.jsp");
+		dispatchWithParams(request, response,"jsp/login/login.jsp");
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
