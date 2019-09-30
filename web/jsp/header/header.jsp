@@ -20,7 +20,7 @@
 		top: 30px;
 		right: 50px;
 		font-size: 40px;
-		animation: textGradient 1.5s linear infinite;
+		/*animation: textGradient 1.5s linear infinite;*/
 		background: linear-gradient(230deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
 		background-size: 50% 100%;
 		-webkit-background-clip: text;
@@ -30,6 +30,11 @@
 	@keyframes textGradient {
 		0%{background-position: 0% 50%;}
 		100%{background-position: 100% 50%;}
+	}
+	
+	@keyframes bori {
+		0%{background-position: 100% 50%;}
+		100%{background-position: 0% 50%;}
 	}
 	
 	.menu-bar {
@@ -42,12 +47,17 @@
 		padding-bottom: 8px !important;
 		padding-top: 8px !important;
 		bottom: 8px !important;
+		filter: saturate(1) !important;
+	}
+	.menu-bar > span:hover{
+		filter: saturate(1);
 	}
 	.menu-bar > span {
-		transition: 0.25s;
-		animation: textGradient 1.5s linear infinite;
+		/*animation: textGradient 1.5s linear infinite;*/
 		/*background: darkslategray;*/
 		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
+		filter: saturate(0);
+		transition: 0.2s linear;
 		background-size: 50% 100%;
 		
 		color: white;

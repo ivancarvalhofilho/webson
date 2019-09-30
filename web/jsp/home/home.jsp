@@ -22,7 +22,7 @@
 
 	.home {
 		height: 80%;
-		padding: 10px;
+		padding: 20px;
 	}
 </style>
 
@@ -46,7 +46,7 @@
 	};
 
 	$(document).ready( function () {
-		changeComponent(CONTAINERS.home);
+		changeComponent(CONTAINERS.tests);
 	});
 
 </script>

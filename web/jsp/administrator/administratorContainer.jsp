@@ -1,3 +1,3 @@
 <div>
-	Administradores aqui
+	Cadastre as imagens aqui
 </div>

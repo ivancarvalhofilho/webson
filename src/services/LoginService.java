@@ -12,7 +12,7 @@ public class LoginService {
 		
 //		mock
 		Researcher loggedResearcher = null;
-		if(name.equals("Ivan") && !password.equals("")){
+		if(name.equals("ivan.filho@equals.com.br") && !password.equals("")){
 			loggedResearcher = new Researcher();
 			loggedResearcher.setId(RESEARCHER_ID_MOCK);
 			loggedResearcher.setName(RESEARCHER_NAME_MOCK);
