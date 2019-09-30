@@ -32,10 +32,11 @@
 		justify-content: space-around;
 	}
 	.icons > span {
-		border: 1px solid;
-		border-radius: 3em;
+		border: 1px solid black;
+		border-radius: 10px;
 		color: white;
 		font-weight: bold;
+		padding: 4px;
 		
 	}
 	.icons > span:first-child {

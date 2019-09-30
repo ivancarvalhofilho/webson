@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/administrator/administratorContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/administrator/administratorContainer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/header/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/header/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
