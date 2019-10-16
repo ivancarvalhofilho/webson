@@ -48,7 +48,7 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 30px !important;
-			color: blue !important;
+			color: #808080 !important;
 		}
 		spanError {
 			color: red;
@@ -57,14 +57,22 @@
 			display: flex;	
 			justify-content: center;
 		}
+		button {
+			border: none;
+			background: linear-gradient(90deg,#9392C1, #1B22D9);
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+			border-radius: 5px !important;
+		}
 	</style>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<form method="POST" action="/web/login">
 		<div>
 			<div>
-				<h2>Loga ai</h2>
-				<input name="name"/>
-				<input name="password" type="password"/>
+				<h2>Bem vindo!</h2>
+				<input name="name" placeholder="login"/>
+				<input name="password" placeholder="senha" type="password"/>
 				<button>entrar</button>
 				<c:if test="${errorMsg != null}">
 					<spanError>${errorMsg}</spanError>

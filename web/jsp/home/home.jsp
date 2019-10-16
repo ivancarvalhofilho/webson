@@ -24,6 +24,8 @@
 		height: 80%;
 		padding: 20px;
 	}
+	
+
 </style>
 
 <script>
@@ -32,6 +34,7 @@
 		home: "/web/homeContainer",
 		administrator: "/web/administratorContainer",
 		tests: "/web/testContainer",
+		login: "/login",
 	};
 	
 	function changeComponent (component) {
@@ -46,7 +49,7 @@
 	};
 
 	$(document).ready( function () {
-		changeComponent(CONTAINERS.tests);
+		changeComponent(CONTAINERS.home);
 	});
 
 </script>
@@ -54,7 +57,9 @@
 <jsp:include page="../header/header.jsp"/>
 
 <div class="home">
-	<div id="content"> Loading... </div>
+	<div id="content"> 
+
+	</div>
 </div>
 
 <jsp:include page="../footer/footer.jsp"/>

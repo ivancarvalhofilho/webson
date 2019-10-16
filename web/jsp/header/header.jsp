@@ -20,7 +20,7 @@
 		top: 30px;
 		right: 50px;
 		font-size: 40px;
-		/*animation: textGradient 1.5s linear infinite;*/
+		animation: textGradient 1.5s linear infinite;
 		background: linear-gradient(230deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
 		background-size: 50% 100%;
 		-webkit-background-clip: text;
@@ -53,8 +53,8 @@
 		filter: saturate(1);
 	}
 	.menu-bar > span {
-		/*animation: textGradient 1.5s linear infinite;*/
-		/*background: darkslategray;*/
+		animation: textGradient 1.5s linear infinite;
+		background: darkslategray;
 		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
 		filter: saturate(0);
 		transition: 0.2s linear;
@@ -69,13 +69,26 @@
 		bottom: 3px;
 		cursor: pointer;
 	}
+
+	.sair{
+		border-radius: 1em;
+		position: absolute;
+		left: 10px;
+		top: 15px;
+		color: white;
+		font-weight: bold;
+		background: darkred;
+		padding: 5px 15px;
+		cursor: pointer;
+	}
 </style>
 
 <div class="header">
+	<span class="sair" onclick="document.location.pathname = '/web/login';">Sair</span>
 	<div class="logo">Trabalho de webson</div>
 	<div class="menu-bar">
 		<span onclick="changeContainer.call(this, CONTAINERS.home)" class="active-menu">Home</span>
-		<span onclick="changeContainer.call(this, CONTAINERS.administrator)">Adminstração</span>
-		<span onclick="changeContainer.call(this, CONTAINERS.tests)">Listar pesquisas</span>
+		<span onclick="changeContainer.call(this, CONTAINERS.administrator)">Banco de imagens</span>
+		<span onclick="changeContainer.call(this, CONTAINERS.tests)">Lista de pesquisas</span>
 	</div>
 </div>

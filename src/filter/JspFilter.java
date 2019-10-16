@@ -23,8 +23,7 @@ public class JspFilter implements Filter {
 
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
 		String path = ((HttpServletRequest) req).getRequestURI();
-		if(!(path.equals("/web/jsp/login/login.jsp")
-				|| path.equals("/web/login"))){
+		if(!(path.equals("/web/jsp/login/login.jsp") || path.equals("/web/login"))){
 			if(checkCredentials(
 					(HttpServletRequest)req,
 					(HttpServletResponse) resp,
@@ -41,6 +40,11 @@ public class JspFilter implements Filter {
 	}
 
 	protected Boolean checkCredentials(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException, ServletException {
+		if(session.getAttribute("loggedResearcher") == null){
+			response.sendRedirect("/web/login");
+			return false;
+		}
+		
 		Researcher loggedResearcher = (Researcher) session.getAttribute("loggedResearcher");
 
 		if(loggedResearcher == null){

@@ -58,13 +58,4 @@
 			<span>Excluir</span>
 		</div>
 	</div>
-	<div class="item"> 
-		<div class="texts">
-			<span>Titulo teste aqui</span>
-			<span>Breve descriçãoo resumida...</span>
-		</div>
-		<div class="icons">
-			<span>Editar</span>
-		</div>
-	</div>
 </div>

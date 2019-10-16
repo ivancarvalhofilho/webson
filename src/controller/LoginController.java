@@ -33,6 +33,8 @@ public class LoginController extends BaseController {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
+		session.removeAttribute("loggedResearcher");
 		redirect(response, "jsp/login/login.jsp");
 	}
 }

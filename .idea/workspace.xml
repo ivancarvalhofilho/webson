@@ -7,6 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filter/JspFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/JspFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/administrator/administratorContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/administrator/administratorContainer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/header/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/header/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/home/homeContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/homeContainer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -146,9 +154,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/LoginController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/filter/JspFilter.java</url>
           <line>25</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
