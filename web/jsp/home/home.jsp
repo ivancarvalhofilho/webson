@@ -21,11 +21,38 @@
 	}
 
 	.home {
-		height: 80%;
+		height: calc(100vh - 170px);
 		padding: 20px;
 	}
-	
 
+	addButton {
+		border-radius: 5em;
+		background: #2bacaf;
+		color: white;
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+		z-index: 99999;
+		padding: 10px;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: -webkit-body;
+		box-shadow: 0px 2px 4px 0px #0000004f;
+		cursor: pointer;
+	}
+	addButton:after {
+		content: '+';
+		font-size: 50px;
+	}
+	
+	.scrollableContent{
+		height: 100%;
+		overflow-y: auto;
+		width: 100%;
+	}
 </style>
 
 <script>
