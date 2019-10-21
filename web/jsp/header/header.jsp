@@ -87,8 +87,8 @@
 	<span class="sair" onclick="document.location.pathname = '/web/login';">Sair</span>
 	<div class="logo">Trabalho de webson</div>
 	<div class="menu-bar">
-		<span onclick="changeContainer.call(this, CONTAINERS.home)" class="active-menu">Home</span>
-		<span onclick="changeContainer.call(this, CONTAINERS.administrator)">Banco de imagens</span>
-		<span onclick="changeContainer.call(this, CONTAINERS.tests)">Lista de pesquisas</span>
+		<span id="homeHeaderBar" onclick="changeContainer.call(this, CONTAINERS.home)" class="active-menu">Home</span>
+		<span id="administratorHeaderBar" onclick="changeContainer.call(this, CONTAINERS.administrator)">Banco de imagens</span>
+		<span id="testsHeaderBar" onclick="changeContainer.call(this, CONTAINERS.tests)">Lista de pesquisas</span>
 	</div>
 </div>

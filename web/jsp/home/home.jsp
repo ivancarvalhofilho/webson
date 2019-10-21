@@ -47,6 +47,36 @@
 		content: '+';
 		font-size: 50px;
 	}
+
+	.button-dark {
+		color: black !important;
+	}
+	.button,.button-dark {
+		width: 150px;
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-weight: bold;
+		font-family: 'Roboto';
+		border: none;
+		box-shadow: 1px 1px 5px #00000078;
+	}
+	.green {
+		background: green;
+	}
+	.blue {
+		background: blue;
+	}
+	.yellow {
+		background: yellow;
+	}
+	.orange {
+		background: orange;
+	}
+	.gray {
+		background: dimgray;
+	}
 	
 	.scrollableContent{
 		height: 100%;
@@ -61,8 +91,30 @@
 		home: "/web/homeContainer",
 		administrator: "/web/administratorContainer",
 		tests: "/web/testContainer",
+		createTest: "/web/createTestContainer",
+		createQuestions: "/web/createQuestionsContainer",
 		login: "/login",
 	};
+	
+	var JSONZAO = {};
+	
+	function resetJSONZAO() {
+		JSONZAO = {
+			test: {
+				currentQuestion: 1,
+					title: null,
+					description: null,
+					questionList: [
+					{
+						title: null,
+						description: null,
+						type: null,
+						images: []
+					}
+				]
+			}
+		}
+	}
 	
 	function changeComponent (component) {
 		$("#content").load(component);
@@ -70,7 +122,17 @@
 	
 	function changeContainer (component) {
 		$(".menu-bar > span").removeClass("active-menu");
-		$(this).addClass("active-menu");
+		
+		if (component == CONTAINERS.home) {
+			$("#homeHeaderBar").addClass("active-menu");
+		} else if(component == CONTAINERS.administrator) {
+			$("#administratorHeaderBar").addClass("active-menu");
+		} else if (component == CONTAINERS.tests ||
+			component == CONTAINERS.createTest ||
+			component == CONTAINERS.createQuestions
+			) {
+			$("#testsHeaderBar").addClass("active-menu");
+		}
 		
 		changeComponent(component);
 	};
@@ -90,5 +152,6 @@
 </div>
 
 <jsp:include page="../footer/footer.jsp"/>
+	
 </body>
 </html>

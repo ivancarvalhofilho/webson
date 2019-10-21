@@ -11,6 +11,7 @@
 		justify-content: space-around;
 		align-items: center;
 		width: 80%;
+		flex-direction: row-reverse;
 	}
 	.homeContainer > div > div {
 		position: relative;

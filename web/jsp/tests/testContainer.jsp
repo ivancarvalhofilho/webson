@@ -60,7 +60,7 @@
 </style>
 
 <div class="testContainer">
-	<addButton onclick=""/>
+	<addButton onclick="changeContainer.call(this, CONTAINERS.createTest)"/>
 	<div class="scrollableContent">
 		<div class="itemBody">
 			<div class="item">
