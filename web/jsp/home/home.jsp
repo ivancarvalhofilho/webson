@@ -96,7 +96,22 @@
 		login: "/login",
 	};
 	
-	var JSONZAO = {};
+	var JSONZAO = {
+		test: {
+			currentQuestion: 1,
+			title: null,
+			description: null,
+			questionList: [
+				{
+					title: null,
+					description: null,
+					type: null,
+					images: [],
+					sliderValue: []
+				}
+			]
+		}
+	};
 	
 	function resetJSONZAO() {
 		JSONZAO = {
