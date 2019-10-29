@@ -181,6 +181,10 @@
 		changeContainer(CONTAINERS.createQuestions);
 	});
 	
+	$("#finishButton").on("click", function () {
+		$.post(METHODS.saveTest, {jsonString: JSON.stringify(JSONZAO.test)});
+	});
+	
 	
 	$("[name='type']").on("change", function () {
 		$(".ordinalType, .continueType").hide();

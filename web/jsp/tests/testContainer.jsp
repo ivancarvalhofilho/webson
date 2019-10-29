@@ -59,58 +59,20 @@
 	}
 </style>
 
+<script>
+	$(document).ready(function () {
+		$(".itemBody").load(METHODS.searchTest);
+	})
+</script>
+
 <div class="testContainer">
 	<addButton onclick="changeContainer.call(this, CONTAINERS.createTest)"/>
 	<div class="scrollableContent">
 		<div class="itemBody">
 			<div class="item">
 				<div class="texts">
-					<span style="font-weight: bold;">Titulo teste aqui</span>
-					<span>Breve descrição resumida...</span>
-				</div>
-				<div class="icons">
-					<span>Share</span>
-					<span>Editar</span>
-					<span>Excluir</span>
-				</div>
-			</div>
-			<div class="item">
-				<div class="texts">
-					<span style="font-weight: bold;">Titulo teste aqui</span>
-					<span>Breve descrição resumida...</span>
-				</div>
-				<div class="icons">
-					<span>Share</span>
-					<span>Editar</span>
-					<span>Excluir</span>
-				</div>
-			</div>
-			<div class="item">
-				<div class="texts">
-					<span style="font-weight: bold;">Titulo teste aqui</span>
-					<span>Breve descrição resumida...</span>
-				</div>
-				<div class="icons">
-					<span>Share</span>
-					<span>Editar</span>
-					<span>Excluir</span>
-				</div>
-			</div>
-			<div class="item">
-				<div class="texts">
-					<span style="font-weight: bold;">Titulo teste aqui</span>
-					<span>Breve descrição resumida...</span>
-				</div>
-				<div class="icons">
-					<span>Share</span>
-					<span>Editar</span>
-					<span>Excluir</span>
-				</div>
-			</div>
-			<div class="item">
-				<div class="texts">
-					<span style="font-weight: bold;">Titulo teste aqui</span>
-					<span>Breve descrição resumida...</span>
+					<span style="font-weight: bold;">Carregando...</span>
+					<span>Carregando...</span>
 				</div>
 				<div class="icons">
 					<span>Share</span>

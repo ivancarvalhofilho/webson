@@ -7,9 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
+      <change afterPath="$PROJECT_DIR$/src/methods/SearchTestsMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/MysqlCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enums/QuestionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/QuestionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Researcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Researcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/createQuestions/createQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/createQuestions/createQuestions.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +26,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -40,12 +63,14 @@
   <component name="ProjectId" id="1RAhlKGPgvK8gbkcCRFwXiaIqYd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/java-json.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -55,11 +80,11 @@
       <recent name="container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/web/jsp" />
       <recent name="$PROJECT_DIR$/web/createQuestion" />
       <recent name="$PROJECT_DIR$/web/jsp/createTest" />
       <recent name="$PROJECT_DIR$/web/jsp/login" />
-      <recent name="$PROJECT_DIR$/web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -154,14 +179,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/LoginController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/filter/JspFilter.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/services/TestService.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

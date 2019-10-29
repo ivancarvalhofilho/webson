@@ -1,6 +1,6 @@
 package domain;
 
-import Enums.QuestionEnum;
+import enums.QuestionEnum;
 
 public class Question {
 	private String title;

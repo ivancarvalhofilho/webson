@@ -1,6 +1,7 @@
 package controller;
 
 import domain.Researcher;
+import org.json.JSONException;
 import services.LoginService;
 
 import javax.servlet.ServletException;
@@ -20,7 +21,12 @@ public class LoginController extends BaseController {
 		String researcherPass = request.getParameter("password");
 
 		LoginService loginService = new LoginService();
-		Researcher loggedResearcher = loginService.makeLogin(researcherName, researcherPass);
+		Researcher loggedResearcher = null;
+		try {
+			loggedResearcher = loginService.makeLogin(researcherName, researcherPass);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 		if(loggedResearcher != null){
 			session.setAttribute("loggedResearcher", loggedResearcher);
 			redirect(response, "home");

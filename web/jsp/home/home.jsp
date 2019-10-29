@@ -93,7 +93,11 @@
 		tests: "/web/testContainer",
 		createTest: "/web/createTestContainer",
 		createQuestions: "/web/createQuestionsContainer",
-		login: "/login",
+	};
+	
+	var METHODS = {
+		saveTest: "/web/saveTest",
+		searchTest: "/web/searchTests",
 	};
 	
 	var JSONZAO = {
