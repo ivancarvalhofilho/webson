@@ -182,7 +182,9 @@
 	});
 	
 	$("#finishButton").on("click", function () {
-		$.post(METHODS.saveTest, {jsonString: JSON.stringify(JSONZAO.test)});
+		$.post(METHODS.saveTest, {jsonString: JSON.stringify(JSONZAO.test)}, function () {
+			changeContainer(CONTAINERS.tests);
+		});
 	});
 	
 	

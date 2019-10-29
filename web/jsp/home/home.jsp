@@ -97,12 +97,14 @@
 	
 	var METHODS = {
 		saveTest: "/web/saveTest",
+		deleteTest: "/web/deleteTest",
 		searchTest: "/web/searchTests",
 	};
 	
 	var JSONZAO = {
 		test: {
 			currentQuestion: 1,
+			id: null,
 			title: null,
 			description: null,
 			questionList: [
@@ -135,11 +137,11 @@
 		}
 	}
 	
-	function changeComponent (component) {
-		$("#content").load(component);
+	function changeComponent (component, param) {
+		$("#content").load(component + (param != null ? param : ""));
 	};
 	
-	function changeContainer (component) {
+	function changeContainer (component, param) {
 		$(".menu-bar > span").removeClass("active-menu");
 		
 		if (component == CONTAINERS.home) {
@@ -153,7 +155,7 @@
 			$("#testsHeaderBar").addClass("active-menu");
 		}
 		
-		changeComponent(component);
+		changeComponent(component, param);
 	};
 
 	$(document).ready( function () {

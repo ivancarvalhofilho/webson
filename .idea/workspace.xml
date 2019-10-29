@@ -7,17 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
-      <change afterPath="$PROJECT_DIR$/src/methods/SearchTestsMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/MysqlCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enums/QuestionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/QuestionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Researcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Researcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/CreateTestContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/CreateTestContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/createQuestions/createQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/createQuestions/createQuestions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/createTest/createTestContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/createTest/createTestContainer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +41,8 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,16 +170,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/services/TestService.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

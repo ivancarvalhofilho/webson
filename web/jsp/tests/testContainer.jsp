@@ -40,6 +40,7 @@
 		color: white;
 		font-weight: bold;
 		padding: 4px;
+		cursor: pointer;
 	}
 	.icons > span:nth-child(1) {
 		background: gray;

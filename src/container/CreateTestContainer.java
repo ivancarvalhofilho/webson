@@ -3,6 +3,9 @@ package container;
 import controller.BaseController;
 import domain.Question;
 import domain.Test;
+import org.json.JSONArray;
+import org.json.JSONException;
+import services.TestService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +23,16 @@ public class CreateTestContainer extends BaseController {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("test", request.getAttribute("test"));
+		String id = request.getParameter("id");
+		TestService testService = new TestService();
+		if(id != null){
+			try {
+				JSONArray jsonArray = testService.searchTest(Long.valueOf(id));
+				request.setAttribute("test", jsonArray.length() > 0 ? jsonArray.get(0) : null);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+		}
 		dispatchWithParams(request, response, "jsp/createTest/createTestContainer.jsp");
 	}
 }
