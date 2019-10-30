@@ -1,0 +1,41 @@
+interviewer {
+	id,
+	ibge (varios dados)
+}
+
+answer{
+	id,
+	idQuestion,
+	idInterviewer,
+	valorResposta
+}
+
+test {
+	id,
+	title,
+	description
+}
+
+question{
+	id,
+	idTest,
+	title,
+	description,
+	type
+}
+
+rel_img_question {
+	idQuestion,
+	idImage
+}
+
+images {
+	id,
+	base64
+}
+
+user {
+	id,
+	name,
+	password
+}

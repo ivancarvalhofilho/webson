@@ -32,11 +32,11 @@ public class TestService {
 			);
 	}
 	
-	public JSONArray searchTests() throws JSONException {
+	public JSONArray getTests() throws JSONException {
 		return select("select * from test");
 	}
 	
-	public JSONArray searchTest(Long id) throws JSONException {
+	public JSONArray getTest(Long id) throws JSONException {
 		return select("select * from test " +
 				"where id = '" + id + "'");
 	}

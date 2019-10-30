@@ -1,4 +1,4 @@
-package methods;
+package controller;
 
 import controller.BaseController;
 import org.json.JSONException;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "DeleteTestMethod", urlPatterns = "/deleteTest")
-public class DeleteTestMethod extends BaseController {
+@WebServlet(name = "DeleteTestController", urlPatterns = "/deleteTest")
+public class DeleteTestController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			Long id = Long.valueOf(request.getParameter("id"));

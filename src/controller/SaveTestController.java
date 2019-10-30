@@ -1,4 +1,4 @@
-package methods;
+package controller;
 
 import controller.BaseController;
 import org.json.JSONException;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "SaveTestMethod", urlPatterns = "/saveTest")
-public class SaveTestMethod extends BaseController {
+@WebServlet(name = "SaveTestController", urlPatterns = "/saveTest")
+public class SaveTestController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		JSONObject jsonObject = null;
 		try {

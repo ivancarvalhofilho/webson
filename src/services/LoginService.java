@@ -24,6 +24,7 @@ public class LoginService {
 				"where id = '" + researcherId + "'");
 		return res.length() > 0;
 	}
+	
 	public Researcher checkResearcherExists(String researcherName) throws JSONException {
 		JSONArray res =  select(
 				"select * from user "+

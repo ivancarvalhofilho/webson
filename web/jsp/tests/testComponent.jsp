@@ -15,7 +15,7 @@
 <c:forEach begin="0" end="${testList.length() -1}" var="index">
 	<div class="item">
 		<div class="texts">
-			<span style="font-weight: bold;">${testList.getJSONObject(index).getString("title")}</span>
+				<span style="font-weight: bold;">${testList.getJSONObject(index).getString("title")}</span>
 			<span>${testList.getJSONObject(index).getString("description")}</span>
 		</div>
 		<div class="icons">

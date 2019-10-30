@@ -10,9 +10,10 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 public class MysqlCon {
 	
-	public static JSONArray select(String query){
+	public static JSONArray select(String query) {
 		JSONArray json = new JSONArray();
 
 		try {
