@@ -99,6 +99,7 @@
 		saveTest: "/web/saveTest",
 		deleteTest: "/web/deleteTest",
 		searchTest: "/web/searchTests",
+		getInterviewerTestController: "/web/getInterviewerTestController",
 	};
 	
 	var JSONZAO = {

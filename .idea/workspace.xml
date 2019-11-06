@@ -7,7 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
-      <change beforePath="$PROJECT_DIR$/src/services/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/AnswerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GetTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GetTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testContainer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +39,8 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -69,11 +74,11 @@
       <recent name="container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/jsp/interviewer" />
+      <recent name="$PROJECT_DIR$/web/jsp/answer" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/web/jsp" />
       <recent name="$PROJECT_DIR$/web/createQuestion" />
-      <recent name="$PROJECT_DIR$/web/jsp/createTest" />
-      <recent name="$PROJECT_DIR$/web/jsp/login" />
     </key>
   </component>
   <component name="RunDashboard">

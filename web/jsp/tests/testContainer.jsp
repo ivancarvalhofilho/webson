@@ -20,7 +20,8 @@
 		box-shadow: 2px 4px 10px 0px #8c8c8c24;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;	
+		align-items: center;
+		cursor: pointer;
 	}
 	
 	.texts {
@@ -63,11 +64,12 @@
 <script>
 	$(document).ready(function () {
 		$(".itemBody").load(METHODS.searchTest);
-	})
+	});
 </script>
 
 <div class="testContainer">
 	<addButton onclick="changeContainer.call(this, CONTAINERS.createTest)"/>
+	
 	<div class="scrollableContent">
 		<div class="itemBody">
 			<div class="item">
