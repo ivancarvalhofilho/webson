@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "GetInterviewerTestController", urlPatterns = "/getInterviewerTestController")
+@WebServlet(name = "GetInterviewerTestController", urlPatterns = "/getInterviewerTest")
 public class GetInterviewerTestController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		

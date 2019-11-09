@@ -99,7 +99,8 @@
 		saveTest: "/web/saveTest",
 		deleteTest: "/web/deleteTest",
 		searchTest: "/web/searchTests",
-		getInterviewerTestController: "/web/getInterviewerTestController",
+		getInterviewerTest: "/web/getInterviewerTest",
+		getAnswer: "/web/getAnswerByInterviewerAndTest",
 	};
 	
 	var JSONZAO = {
@@ -151,7 +152,8 @@
 			$("#administratorHeaderBar").addClass("active-menu");
 		} else if (component == CONTAINERS.tests ||
 			component == CONTAINERS.createTest ||
-			component == CONTAINERS.createQuestions
+			component == CONTAINERS.createQuestions ||
+			component == CONTAINERS.getAnswer 
 			) {
 			$("#testsHeaderBar").addClass("active-menu");
 		}

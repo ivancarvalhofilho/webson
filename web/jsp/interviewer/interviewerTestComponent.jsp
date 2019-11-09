@@ -2,7 +2,7 @@
 
 <script>
 	function viewResponse(id) {
-		changeContainer(CONTAINERS.createTest, "?id="+id);
+		changeContainer(METHODS.getAnswer, "?answerId="+id);
 	}
 </script>
 

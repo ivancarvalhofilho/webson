@@ -4,6 +4,7 @@ import controller.BaseController;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import services.AnswerService;
 import services.InterviewerService;
 import services.TestService;
 
@@ -13,20 +14,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "GetAnswerController", urlPatterns = "/getAnswerByInterviewerAndTestController")
+@WebServlet(name = "GetAnswerController", urlPatterns = "/getAnswerByInterviewerAndTest")
 public class GetAnswerController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String idTest = request.getParameter("idTest");
+		String answerId = request.getParameter("answerId");
 
-		InterviewerService interviewerService = new InterviewerService();
+		AnswerService answerService = new AnswerService();
 		try {
-			JSONArray jsonObject = interviewerService.getInterviewersByTest(Long.valueOf(idTest));
-			request.setAttribute("interviewerList", jsonObject);
-			dispatchWithParams(request, response, "jsp/interviewer/interviewerTestComponent.jsp");
+			JSONArray jsonObject = answerService.getAnswersByTestAndInterviewer(Long.valueOf(answerId));
+			request.setAttribute("answerResponse", jsonObject);
+			dispatchWithParams(request, response, "jsp/answer/answerComponent.jsp");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

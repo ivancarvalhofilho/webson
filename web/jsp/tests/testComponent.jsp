@@ -12,7 +12,7 @@
 	}
 	
 	function viewTest(id) {
-		$(".itemBody").load(METHODS.getInterviewerTestController+"?idTest="+id);
+		$(".itemBody").load(METHODS.getInterviewerTest+"?idTest="+id);
 		$("addButton").hide();
 	}
 </script>
