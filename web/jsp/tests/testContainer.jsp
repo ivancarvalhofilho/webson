@@ -42,6 +42,7 @@
 		font-weight: bold;
 		padding: 4px;
 		cursor: pointer;
+		transition: 0.2s;
 	}
 	.icons > span:nth-child(1) {
 		background: gray;
@@ -52,12 +53,55 @@
 	.icons > span:nth-child(3) {
 		background: red;
 	}
+	.icons > span:hover {
+		filter: brightness(0.8);
+	}
 	.testContainer {
 		border: 1px solid;
 		height: 100%;
 		position: relative;
 		min-width: 80%;
 		margin: 0 10%;
+	}
+	
+	.katchau {
+		position: fixed;
+		left: 0;
+		bottom: 50px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		z-index: 100000;
+		opacity: 0;
+		transition: 1s;
+	}
+	.katchau > label {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.katchauVisible {
+		opacity: 1;
+	}
+	.katchau > label > span{
+		width: 80%;
+		background: gray;
+		border-radius: 1em;
+		padding: 10px;
+		text-align: center;
+	}
+	.katchau > input:checked + label > span {
+		animation: piaoDoBau 0.5s infinite linear;
+		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
+	}
+	
+	@keyframes piaoDoBau {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(359deg);
+		}
 	}
 </style>
 
@@ -72,17 +116,12 @@
 	
 	<div class="scrollableContent">
 		<div class="itemBody">
-			<div class="item">
-				<div class="texts">
-					<span style="font-weight: bold;">Carregando...</span>
-					<span>Carregando...</span>
-				</div>
-				<div class="icons">
-					<span>Share</span>
-					<span>Editar</span>
-					<span>Excluir</span>
-				</div>
-			</div>
+			
 		</div>
+	</div>
+	
+	<div class="katchau">
+		<input type="checkbox" hidden id="katchau">
+		<label for="katchau"><span></span></label>
 	</div>
 </div>

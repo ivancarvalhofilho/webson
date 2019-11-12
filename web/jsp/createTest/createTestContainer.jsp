@@ -40,14 +40,14 @@
 
 <div class="createTestContainer">
 	<h2>Tela criar pesquisa</h2>
-		<input hidden id="testId" value="${test.get("id")}"/>
-		<label>
-			Titulo pequisa
-		<input type="text" name="title" id="title" value="${test != null ? test.get("title") : ""}"/>
-		</label>
-		<label>
-			Descrição pesquisa
-			<textarea type="text" name="description" id="description" rows="5">${test != null ? test.get("description") : ""}</textarea>
-		</label>
-		<button type="button" onclick="startTest()" class="button green startTest">Ir para perguntas</button>
+	<input hidden id="testId" value="${test.get("id")}"/>
+	<label>
+		Titulo pequisa
+	<input type="text" name="title" id="title" value="${test != null ? test.get("title") : ""}"/>
+	</label>
+	<label>
+		Descrição pesquisa
+		<textarea type="text" name="description" id="description" rows="5">${test != null ? test.get("description") : ""}</textarea>
+	</label>
+	<button type="button" onclick="startTest()" class="button green startTest">Ir para perguntas</button>
 </div>

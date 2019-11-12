@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <style>
 	.administratorContainter {
 		border: 1px solid;
@@ -46,95 +48,27 @@
 	}
 </style>
 
+<script>
+	
+	function deleteImage(id) {
+		$.post(METHODS.deleteImage, {id: id});
+	}
+	
+	function showContainerAddImage(){
+		changeContainer(CONTAINERS.addImage);		
+	}
+	
+</script>
+
 <div class="administratorContainter">
-	<addButton/>
+	<addButton onclick="showContainerAddImage()"/>
 
 	<div class="scrollableContent flexWrap">
-		<div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div><div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div><div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="http://www.museudememes.com.br/wp-content/uploads/2018/04/gatoentrevistadomuseudememes-14-600x500.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://preview.redd.it/t9xf38ksipv21.png?width=667&auto=webp&s=75b588d324c0f3177ffbf07a88df67ff5c3459eb"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="http://www.museudememes.com.br/wp-content/uploads/2018/04/gatoentrevistadomuseudememes-14-600x500.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://preview.redd.it/t9xf38ksipv21.png?width=667&auto=webp&s=75b588d324c0f3177ffbf07a88df67ff5c3459eb"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="http://www.museudememes.com.br/wp-content/uploads/2018/04/gatoentrevistadomuseudememes-14-600x500.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://preview.redd.it/t9xf38ksipv21.png?width=667&auto=webp&s=75b588d324c0f3177ffbf07a88df67ff5c3459eb"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="http://www.museudememes.com.br/wp-content/uploads/2018/04/gatoentrevistadomuseudememes-14-600x500.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://preview.redd.it/t9xf38ksipv21.png?width=667&auto=webp&s=75b588d324c0f3177ffbf07a88df67ff5c3459eb"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="http://www.museudememes.com.br/wp-content/uploads/2018/04/gatoentrevistadomuseudememes-14-600x500.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg"/>
-		</div>
-		<div class="image">
-			<span/>
-			<img src="https://preview.redd.it/t9xf38ksipv21.png?width=667&auto=webp&s=75b588d324c0f3177ffbf07a88df67ff5c3459eb"/>
-		</div>
+		<c:forEach begin="0" end="${imagesResponse.length() -1}" var="index">
+			<div class="image">
+				<span onclick="deleteImage('${imagesResponse.get(index).get("id")}'); $(this).parent().remove()"/>
+				<img src="${imagesResponse.get(index).get("url")}"/>
+			</div>
+		</c:forEach>
 	</div>
 </div>

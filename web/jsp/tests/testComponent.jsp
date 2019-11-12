@@ -14,6 +14,24 @@
 	function viewTest(id) {
 		$(".itemBody").load(METHODS.getInterviewerTest+"?idTest="+id);
 		$("addButton").hide();
+		debugger;
+	}
+	
+	function shareTest(id) {
+		let testUrl = window.location.host + '/web/answerTest/' + id;
+		$(".katchau").addClass("katchauVisible");
+		$(".katchau > label > span").text("Link copiado: " + testUrl);
+		
+		var dummyContent = testUrl;
+		var dummy = $('<input style="display: none">').val(dummyContent).appendTo('body').select()
+		document.execCommand('copy');
+		
+		setTimeout(function () {
+			$(".katchauVisible").removeClass("katchauVisible");
+		}, 5000);
+		setTimeout(function () {
+			$("#katchau").prop("checked", 0);
+		}, 6000);
 	}
 </script>
 
@@ -24,7 +42,7 @@
 			<span>${testList.getJSONObject(index).getString("description")}</span>
 		</div>
 		<div class="icons">
-			<span>Share</span>
+			<span onclick="shareTest(${testList.getJSONObject(index).get("id")});event.stopImmediatePropagation()">Share</span>
 			<span onclick="editTest(${testList.getJSONObject(index).get("id")})">Editar</span>
 			<span onclick="deleteTest(${testList.getJSONObject(index).get("id")})">Excluir</span>
 		</div>

@@ -93,6 +93,7 @@
 		tests: "/web/testContainer",
 		createTest: "/web/createTestContainer",
 		createQuestions: "/web/createQuestionsContainer",
+		addImage: "/web/addImageContainer",
 	};
 	
 	var METHODS = {
@@ -101,6 +102,7 @@
 		searchTest: "/web/searchTests",
 		getInterviewerTest: "/web/getInterviewerTest",
 		getAnswer: "/web/getAnswerByInterviewerAndTest",
+		deleteImage: "/web/deleteImage",
 	};
 	
 	var JSONZAO = {
@@ -148,12 +150,13 @@
 		
 		if (component == CONTAINERS.home) {
 			$("#homeHeaderBar").addClass("active-menu");
-		} else if(component == CONTAINERS.administrator) {
+		} else if(component == CONTAINERS.administrator ||
+			component == CONTAINERS.addImage) {
 			$("#administratorHeaderBar").addClass("active-menu");
 		} else if (component == CONTAINERS.tests ||
 			component == CONTAINERS.createTest ||
 			component == CONTAINERS.createQuestions ||
-			component == CONTAINERS.getAnswer 
+			component == METHODS.getAnswer 
 			) {
 			$("#testsHeaderBar").addClass("active-menu");
 		}
