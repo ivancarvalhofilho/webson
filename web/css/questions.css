@@ -1,0 +1,109 @@
+.createQuestionContainer {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.buttons > button {
+	margin: 15px;
+}
+.buttons > button:first-child {
+	position: absolute;
+	left: 0;
+}
+
+.questionBody {
+	display: flex;
+	width: 100%;
+	height: 80%;
+}
+.questionBody > div:first-child {
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+}
+.questionBody > div:first-child > label {
+	display: flex;
+	flex-flow: column;
+	width: 300px;
+	margin: 5px;
+}
+.questionBody > div:last-child {
+	display: flex;
+	width: 50%;
+}
+
+.ordinalType,.continueType {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+	width: 95%;
+	height: 100%;
+}
+.gameOfTheElderly > span {
+	position: absolute;
+	top: -20px;
+	left: 0;
+}
+.gameOfTheElderly {
+	position: relative;
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 50%;
+	border: 1px solid black;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	margin-top: 20px;
+}
+.box {
+	position: relative;
+	width: 25%;
+	border: 1px solid black;
+	height: 25%;
+	cursor: pointer;
+}
+.box:after{
+	content: '+';
+	font-family: auto;
+	font-size: 400%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.boxSelected {
+	background: blue;
+}
+.boxWithImage:after {
+	content: '' !important; 
+}
+.slider {
+	position: absolute;
+	bottom: 20px;
+	background: linear-gradient(45deg, #e4ff00, #ff0000);
+	height: 10px;
+	width: 80%;
+}
+.slider > span {
+	height: 20px;
+	width: 20px;
+	border-radius: 3em;
+	border: 1px solid black;
+	background: white;
+	position: absolute;
+	cursor: grab;
+	top: -5px;
+	left: -10px;
+	user-select: none;
+}
