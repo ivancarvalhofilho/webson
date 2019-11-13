@@ -1,24 +1,3 @@
-DROP TABLE IF EXISTS `usuario`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `usuario` (
-  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(30) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `senha` varchar(100) NOT NULL,
-  `tipo` int(6) unsigned DEFAULT NULL,
-  `version` int(6) DEFAULT '0',
-  `UUID` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `usuario`
---
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Administrador','email_do_administrador@dcc.ufla.br','22aa8a081b1b26276f2b930618fe25d8',0,4,'5cfd4172-f49c-4bfa-a1b0-3cb643d2ca63');
-
 ######################NEW############################################################
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -26,22 +5,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema websondatabase
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `mydb` ;
+DROP SCHEMA IF EXISTS `websondatabase` ;
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema websondatabase
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `websondatabase` DEFAULT CHARACTER SET utf8 ;
+USE `websondatabase` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`interviewer`
+-- Table `websondatabase`.`interviewer`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`interviewer` ;
+DROP TABLE IF EXISTS `websondatabase`.`interviewer` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`interviewer` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`interviewer` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(100) NOT NULL,
   `phone` VARCHAR(45) NOT NULL,
@@ -53,11 +32,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`test`
+-- Table `websondatabase`.`test`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`test` ;
+DROP TABLE IF EXISTS `websondatabase`.`test` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`test` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`test` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(45) NOT NULL,
   `description` VARCHAR(45) NOT NULL,
@@ -66,11 +45,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`question`
+-- Table `websondatabase`.`question`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`question` ;
+DROP TABLE IF EXISTS `websondatabase`.`question` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`question` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`question` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(45) NOT NULL,
   `description` VARCHAR(45) NOT NULL,
@@ -80,18 +59,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`question` (
   INDEX `fk_question_test_idx` (`test_id` ASC),
   CONSTRAINT `fk_question_test`
     FOREIGN KEY (`test_id`)
-    REFERENCES `mydb`.`test` (`id`)
+    REFERENCES `websondatabase`.`test` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`answer`
+-- Table `websondatabase`.`answer`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`answer` ;
+DROP TABLE IF EXISTS `websondatabase`.`answer` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`answer` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`answer` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `value` DOUBLE NOT NULL,
   `interviewer_id` INT NOT NULL,
@@ -102,23 +81,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`answer` (
   INDEX `fk_answer_question1_idx` (`question_id` ASC, `question_test_id` ASC),
   CONSTRAINT `fk_answer_interviewer1`
     FOREIGN KEY (`interviewer_id`)
-    REFERENCES `mydb`.`interviewer` (`id`)
+    REFERENCES `websondatabase`.`interviewer` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_answer_question1`
     FOREIGN KEY (`question_id` , `question_test_id`)
-    REFERENCES `mydb`.`question` (`id` , `test_id`)
+    REFERENCES `websondatabase`.`question` (`id` , `test_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`user`
+-- Table `websondatabase`.`user`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`user` ;
+DROP TABLE IF EXISTS `websondatabase`.`user` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`user` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -129,15 +108,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`user` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Administrador','email_do_administrador@dcc.ufla.br','22aa8a081b1b26276f2b930618fe25d8',0,4,'5cfd4172-f49c-4bfa-a1b0-3cb643d2ca63');
-
 -- -----------------------------------------------------
--- Table `mydb`.`images`
+-- Table `websondatabase`.`images`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`images` ;
+DROP TABLE IF EXISTS `websondatabase`.`images` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`images` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`images` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `base64` LONGTEXT NOT NULL,
   PRIMARY KEY (`id`))
@@ -145,11 +121,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`rel_img_question`
+-- Table `websondatabase`.`rel_img_question`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`rel_img_question` ;
+DROP TABLE IF EXISTS `websondatabase`.`rel_img_question` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`rel_img_question` (
+CREATE TABLE IF NOT EXISTS `websondatabase`.`rel_img_question` (
   `images_id` INT NOT NULL,
   `question_id` INT NOT NULL,
   PRIMARY KEY (`images_id`, `question_id`),
@@ -157,12 +133,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`rel_img_question` (
   INDEX `fk_images_has_question_images1_idx` (`images_id` ASC),
   CONSTRAINT `fk_images_has_question_images1`
     FOREIGN KEY (`images_id`)
-    REFERENCES `mydb`.`images` (`id`)
+    REFERENCES `websondatabase`.`images` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_images_has_question_question1`
     FOREIGN KEY (`question_id`)
-    REFERENCES `mydb`.`question` (`id`)
+    REFERENCES `websondatabase`.`question` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

@@ -42,17 +42,23 @@ public class MysqlCon {
 	}
 	
 	public static int insert(String query){
-		JSONArray json = new JSONArray();
-		int numberUpdatedRows = 0;
+		int insertedId = 0;
 		try {
 			Connection con = createConnection();
 			Statement stmt = con.createStatement();
-			numberUpdatedRows = stmt.executeUpdate(query);
 
+			insertedId = stmt.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
+			
+			ResultSet rs = stmt.getGeneratedKeys();
+			
+			if (rs.next()){
+				insertedId = rs.getInt(1);
+			}
+			
 			con.close();
 		} catch(Exception e){ System.out.println(e); }
 		finally {
-			return numberUpdatedRows;
+			return insertedId;
 		}
 		
 	}
@@ -60,6 +66,6 @@ public class MysqlCon {
 	private static Connection createConnection() throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
 		return DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/websondb","root","1234");
+				"jdbc:mysql://localhost:3306/websondatabase","root","1234");
 	}
 }

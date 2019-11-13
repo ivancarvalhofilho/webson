@@ -14,7 +14,6 @@
 	function viewTest(id) {
 		$(".itemBody").load(METHODS.getInterviewerTest+"?idTest="+id);
 		$("addButton").hide();
-		debugger;
 	}
 	
 	function shareTest(id) {
@@ -38,8 +37,8 @@
 <c:forEach begin="0" end="${testList.length() -1}" var="index">
 	<div class="item" onclick="viewTest(${testList.getJSONObject(index).get("id")})">
 		<div class="texts">
-				<span style="font-weight: bold;">${testList.getJSONObject(index).getString("title")}</span>
-			<span>${testList.getJSONObject(index).getString("description")}</span>
+				<span style="font-weight: bold;">${testList.getJSONObject(index).get("title")}</span>
+			<span>${testList.getJSONObject(index).get("description")}</span>
 		</div>
 		<div class="icons">
 			<span onclick="shareTest(${testList.getJSONObject(index).get("id")});event.stopImmediatePropagation()">Share</span>

@@ -10,23 +10,61 @@ import static util.MysqlCon.select;
 public class TestService {
 
 	public void saveTest(JSONObject testJson) throws JSONException {
-		if(!testJson.isNull("id") && !testJson.get("id").equals("")){
-			int res = insert("update test set " +
+		
+		// UPDATE
+		if(!testJson.isNull("id") && !testJson.get("id").equals("")){ 
+			insert("update test set " +
 					" title='" + testJson.getString("title") + "'," +
 					" description='" + testJson.getString("description") + "'" +
 					" where id="+testJson.get("id")
 			);
-		} else {
-			int res = insert(
-					"insert into test (title, description)" +
-							" values('" + testJson.getString("title") +
-							"','" + testJson.getString("description") + "')"
+			int idTest = testJson.getInt("id");
+			deleteAllQuestionsByTest(idTest);
+			insertQuestionsInTest(testJson, idTest);
+		} else { // INSERT
+			int idTest = insert(
+			"insert into test (title, description)" +
+					" values('" + testJson.getString("title") +
+					"','" + testJson.getString("description") + "')"
+			);
+
+			insertQuestionsInTest(testJson, idTest);
+		}
+		
+	}
+
+	private void insertQuestionsInTest(JSONObject testJson, int idTest) throws JSONException {
+		JSONArray jsonArray = (JSONArray) testJson.get("questionList");
+		for (int i=0; i < jsonArray.length(); i++) {
+			JSONObject jsonObject = jsonArray.getJSONObject(i);
+			String title = jsonObject.getString("title");
+			String description = jsonObject.getString("description");
+			String type = jsonObject.getString("type");
+			
+			insert(
+					"insert into question (test_id, title, description, type)" +
+							" values('" 
+							+ idTest +
+							"','" + title + 
+							"','" + description + 
+							"','" + type + 
+							"')"
 			);
 		}
 	}
-	
+
+	private void deleteAllQuestionsByTest(int idTest) {
+		insert(
+				"delete from question " +
+						" where test_id = '" + idTest + "'"
+		);
+	}
+
 	public void deleteTest(Long id) throws JSONException {
-		int res =  insert(
+
+		deleteAllQuestionsByTest(Math.toIntExact(id));
+		
+		insert(
 			"delete from test " +
 					" where id = '" + id + "'"
 			);
