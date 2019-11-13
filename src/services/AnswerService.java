@@ -2,30 +2,27 @@ package services;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+
+import static util.MysqlCon.select;
 
 public class AnswerService {
 
 	public JSONArray getAnswersByTestAndInterviewer(Long answerId) throws JSONException {
-//		MOCK
-		JSONArray responseList = new JSONArray();
-
-		for (int i = 0; i < 5; i++) {
-			JSONObject object = new JSONObject();
-			object.put("email", "email@email.email" + i);
-			object.put("telephone", "4002-8922" + i);
-			object.put("cep", "375666-666" + i);
-			object.put("age", "98" + i);
-			object.put("gender", "Macho" + i);
-			object.put("skinColour", "Colorido" + i);
-			object.put("infirmity", "infermidades" + i);
-			object.put("questionType", (i%2)+1);
-			object.put("responseValue", i);
-			object.put("questionTitle", "Tielelle" + i);
-			object.put("questionDescription", "adasdas" + i);
-			responseList.put(object);
-		}
-
-		return responseList;
+		return select("select " +
+				"i.email, " +
+				"i.phone, " +
+				"i.cep, " +
+				"i.age, " +
+				"i.skinColor, " +
+				"answer.value, " +
+				"q.type, " +
+				"q.title, " +
+				"q.description " +
+				"from answer " +
+				"inner join interviewer i on answer.interviewer_id = i.id " +
+				"inner join question q on answer.question_id = q.id and answer.question_test_id = q.test_id " +
+				"where " +
+				"answer.id = " + answerId + 
+				" order by q.id asc");
 	}
 }
