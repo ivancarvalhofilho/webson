@@ -11,20 +11,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "DeleteImagesController", urlPatterns = "/deleteImage")
-public class DeleteImagesController extends BaseController {
+@WebServlet(name = "SelectImageController", urlPatterns = "/selectImage")
+public class SelectImageController extends BaseController {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ImageService imageService = new ImageService();
-		try {
-			String id = request.getParameter("id");
-			imageService.deleteImage(Long.valueOf(id));
-			dispatchWithParams(request, response, "jsp/.jsp");
-		} catch (JSONException e) {
-			e.printStackTrace();
-		}
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		ImageService answerService = new ImageService();
+		try {
+			JSONArray jsonObject = answerService.getImages();
+			request.setAttribute("imagesResponse", jsonObject);
+			dispatchWithParams(request, response, "jsp/selectImage/selectImage.jsp");
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 	}
 }

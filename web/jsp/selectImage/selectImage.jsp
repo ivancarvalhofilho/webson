@@ -1,13 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <style>
-	.administratorContainter {
+	.selectImage {
 		border: 1px solid;
-		height: 100%;
 		position: relative;
 		overflow-y: auto;
 		width: 80%;
 		margin: 0px 10%;
+		height: fit-content;
+		max-height: 80%;
 	}
 	.image > span:after {
 		content: 'X';
@@ -40,35 +41,49 @@
 		position: relative;
 		height: min-content;
 		margin: 15px;
+		cursor: pointer;
 	}
-	
+
 	.flexWrap{
 		display: inline-flex;
 		flex-wrap: wrap;
 	}
+	.x {
+		background: red;
+		border-radius: 3em;
+		width: 10px;
+		right: 15px;
+		top: 15px;
+		height: 10px;
+		padding: 10px;
+		position: absolute;
+		color: white;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
 </style>
 
 <script>
-	
-	function deleteImage(id) {
-		$.post(METHODS.deleteImage, {id: id});
+	function selectImage(imageDiv) {
+		debugger
+		$(".box[name='" + selectedBox + "'] img").attr("src", imageDiv.find("img").attr("src"));
+		$(".box[name='" + selectedBox + "'] img").attr("value", imageDiv.find("img")cd 	.attr("value"));
+		$(".box[name='" + selectedBox + "']").addClass("boxWithImage");
+		$(".x").click();
 	}
-	
-	function showContainerAddImage(){
-		changeContainer(CONTAINERS.addImage);		
-	}
-	
 </script>
 
-<div class="administratorContainter">
-	<addButton onclick="showContainerAddImage()"/>
-
+<h2 style="padding-left: 30px">Selecione uma imagem:</h2>
+<span class="x" onclick="$('.modal').hide()">X</span>
+<div class="selectImage">
 	<div class="scrollableContent flexWrap">
 		<c:if test="${imagesResponse != null && imagesResponse.length() > 0}">
 			<c:forEach begin="0" end="${imagesResponse.length() -1}" var="index">
-				<div class="image">
-					<span onclick="deleteImage('${imagesResponse.get(index).get("id")}'); $(this).parent().remove()"/>
-					<img src="${imagesResponse.get(index).get("base64")}"/>
+				<div class="image" onclick="selectImage($(this))">
+					<img src="${imagesResponse.get(index).get("base64")}" value="${imagesResponse.get(index).get("id")}"/>
 				</div>
 			</c:forEach>
 		</c:if>

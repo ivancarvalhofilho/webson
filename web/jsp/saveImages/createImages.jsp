@@ -24,10 +24,16 @@
 </style>
 
 <script>
-	function saveImage() {
-		$.post(METHODS.addImage, {img : $('#file').prop('files')[0].name}, function () {
-			changeContainer(CONTAINERS.administrator);
-		});
+	async function saveImage() {
+		let file = $('#file').prop('files')[0];
+		let reader = new FileReader();
+		reader.onload = function(){
+			$.post(CONTAINERS.addImage, {img: this.result}, function () {
+				changeContainer(CONTAINERS.administrator);
+			});
+		};
+		
+		reader.readAsDataURL(file);
 	}
 </script>
 

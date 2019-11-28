@@ -83,6 +83,26 @@
 		overflow-y: auto;
 		width: 100%;
 	}
+	.modal {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.5);
+		top: 0;
+		left: 0;
+		transition: 1s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.modalBody{
+		background: white;
+		width: 700px;
+		height: 500px;
+		border-radius: 1em;
+		border: 1px solid;
+		position: relative;
+	}
 </style>
 
 <script>
@@ -94,6 +114,7 @@
 		createTest: "/web/createTestContainer",
 		createQuestions: "/web/createQuestionsContainer",
 		addImage: "/web/addImageContainer",
+		selectImage: "/web/selectImage",
 	};
 	
 	var METHODS = {
@@ -179,6 +200,10 @@
 </div>
 
 <jsp:include page="../footer/footer.jsp"/>
+<div class="modal" style="display: none">
+	<div class="modalBody">
 	
+	</div>
+</div>
 </body>
 </html>

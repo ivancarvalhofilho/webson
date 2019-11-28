@@ -12,12 +12,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-weight: bold;
-		color: #a91d1d;
-		text-shadow: 2px 2px #bf090985;
+		color: #3D3A40;
 	}
 </style>
 
 <div class="footer">
-	Made with pure jsp (and jquery)
+	<div>
+		Feito por <a href="https://github.com/ivancarvalhofilho">Ivan Carvalho</a> e <a href="https://github.com/DaniloGN">Danilo Guarizzo</a>
+	</div>
 </div>

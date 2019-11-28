@@ -16,27 +16,33 @@
 	.homeContainer > div > div {
 		position: relative;
 		cursor: pointer;
+		border: 1px solid;
+		border-radius: 2em;
+		border-top: none;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		padding: 30px;
 	}
 	.homeContainer > div > div > img{
 		border-radius: 2em;
-		width: 300px;
-		height: 200px;
-		object-fit: cover;
+		width: 250px;
+		height: 150px;
+		object-fit: scale-down;
 	}
 	.homeContainer > div > div > span{
 		position: absolute;
-		top: 0;
-		left: 0;
 		width: 100%;
+		left: 0;
 		border-top-left-radius: 1em;
 		border-top-right-radius: 1em;
-		height: 30%;
+		height: 25%;
 		font-size: 26px;
 		color: white;
 		font-weight: bold;
 		background: linear-gradient(#000000fa,#0000);
 		padding: 20px;
 		box-sizing: border-box;
+		top: -25px;
 	}
 </style>
 
@@ -44,11 +50,11 @@
 	<div>
 		<div onclick="changeContainer.call(this, CONTAINERS.tests)">
 			<span>Pesquisas</span>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Atkinson_Rowan.jpg">
+			<img src="./../../icons/researches.png">
 		</div>
 		<div onclick="changeContainer.call(this, CONTAINERS.administrator)">
 			<span>Imagens</span>
-			<img src="https://bostonhassle.com/wp-content/uploads/2018/08/conair2.jpg">
+			<img src="./../../icons/images.png">
 		</div>
 	</div>
 </div>

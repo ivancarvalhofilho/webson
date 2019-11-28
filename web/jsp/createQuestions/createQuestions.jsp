@@ -115,6 +115,13 @@
 			$(".slider > span").offset({top: currentY, left: newX});
 		}
 	});
+	
+	var selectedBox = 0;
+	$(".box").click(function () {
+		selectedBox = $(this).attr("name");
+		$(".modal").show();
+		$(".modalBody").load(CONTAINERS.selectImage);
+	});
 </script>
 
 <div class="createQuestionContainer">
@@ -141,15 +148,15 @@
 			<div class="ordinalType">
 				<div class="gameOfTheElderly">
 					<span>Escolha as imagens das opções</span>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
+					<div class="box" name="1"><img/></div>
+					<div class="box" name="2"><img/></div>
+					<div class="box" name="3"><img/></div>
+					<div class="box" name="4"><img/></div>
+					<div class="box" name="5"><img/></div>
+					<div class="box" name="6"><img/></div>
+					<div class="box" name="7"><img/></div>
+					<div class="box" name="8"><img/></div>
+					<div class="box" name="9"><img/></div>
 				</div>
 			</div>
 			<div class="continueType" style="display: none; height: fit-content;">

@@ -7,30 +7,24 @@
 		});
 	}
 	
-	function editTest(id) {
-		changeContainer(CONTAINERS.createTest, "?id="+id);
-	}
-	
 	function viewTest(id) {
 		$(".itemBody").load(METHODS.getInterviewerTest+"?idTest="+id);
 		$("addButton").hide();
+	}
+	
+	function downloadTest(id) {
+		// $(".itemBody").load(METHODS.getInterviewerTest+"?idTest="+id);
+		// $("addButton").hide();
 	}
 	
 	function shareTest(id) {
 		let testUrl = window.location.host + '/web/answerTest/' + id;
 		$(".katchau").addClass("katchauVisible");
 		$(".katchau > label > span").text("Link copiado: " + testUrl);
-		
-		var dummyContent = testUrl;
-		var dummy = $('<input style="display: none">').val(dummyContent).appendTo('body').select()
-		document.execCommand('copy');
-		
+
 		setTimeout(function () {
 			$(".katchauVisible").removeClass("katchauVisible");
 		}, 5000);
-		setTimeout(function () {
-			$("#katchau").prop("checked", 0);
-		}, 6000);
 	}
 </script>
 
@@ -41,9 +35,9 @@
 			<span>${testList.getJSONObject(index).get("description")}</span>
 		</div>
 		<div class="icons">
-			<span onclick="shareTest(${testList.getJSONObject(index).get("id")});event.stopImmediatePropagation()">Share</span>
-			<span onclick="editTest(${testList.getJSONObject(index).get("id")})">Editar</span>
-			<span onclick="deleteTest(${testList.getJSONObject(index).get("id")})">Excluir</span>
+			<span onclick="shareTest(${testList.getJSONObject(index).get("id")});event.stopImmediatePropagation()"><img src="../../icons/share.png"></span>
+			<span onclick="downloadTest(${testList.getJSONObject(index).get("id")})"><img src="../../icons/download.png"></span>
+			<span onclick="deleteTest(${testList.getJSONObject(index).get("id")})"><img src="../../icons/delete.png"></span>
 		</div>
 	</div>
 </c:forEach>

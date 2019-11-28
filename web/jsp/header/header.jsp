@@ -14,27 +14,21 @@
 	.logo {
 		position: absolute;
 		color: cadetblue;
-		text-shadow: 3px 3px #a2a2a263;
 		font-weight: bold;
 		text-transform: uppercase;
 		top: 30px;
 		right: 50px;
 		font-size: 40px;
-		animation: textGradient 1.5s linear infinite;
-		background: linear-gradient(230deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
-		background-size: 50% 100%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		/*animation: textGradient 1.5s linear infinite;*/
+		/*background: linear-gradient(230deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);*/
+		/*background-size: 50% 100%;*/
+		/*-webkit-background-clip: text;*/
+		/*-webkit-text-fill-color: transparent;*/
 	}
 	
 	@keyframes textGradient {
 		0%{background-position: 0% 50%;}
 		100%{background-position: 100% 50%;}
-	}
-	
-	@keyframes bori {
-		0%{background-position: 100% 50%;}
-		100%{background-position: 0% 50%;}
 	}
 	
 	.menu-bar {
@@ -53,9 +47,8 @@
 		filter: saturate(1);
 	}
 	.menu-bar > span {
-		animation: textGradient 1.5s linear infinite;
-		background: darkslategray;
-		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
+		/*animation: textGradient 1.5s linear infinite;*/
+		background: #11a2a2;
 		filter: saturate(0);
 		transition: 0.2s linear;
 		background-size: 50% 100%;
@@ -77,7 +70,7 @@
 		top: 15px;
 		color: white;
 		font-weight: bold;
-		background: darkred;
+		background: #ce1111;
 		padding: 5px 15px;
 		cursor: pointer;
 	}
@@ -85,7 +78,7 @@
 
 <div class="header">
 	<span class="sair" onclick="document.location.pathname = '/web/login';">Sair</span>
-	<div class="logo">Trabalho de webson</div>
+	<div class="logo">Sistema de pesquisas</div>
 	<div class="menu-bar">
 		<span id="homeHeaderBar" onclick="changeContainer.call(this, CONTAINERS.home)" class="active-menu">Home</span>
 		<span id="administratorHeaderBar" onclick="changeContainer.call(this, CONTAINERS.administrator)">Banco de imagens</span>

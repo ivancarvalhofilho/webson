@@ -36,25 +36,30 @@
 		justify-content: space-around;
 	}
 	.icons > span {
-		border: 1px solid black;
-		border-radius: 10px;
+		border-radius: 3em;
 		color: white;
 		font-weight: bold;
-		padding: 4px;
 		cursor: pointer;
 		transition: 0.2s;
+		padding: 10px;
 	}
 	.icons > span:nth-child(1) {
-		background: gray;
+		background: #4cccff;
 	}
 	.icons > span:nth-child(2) {
-		background: blue;
+		background: #00b500;
 	}
 	.icons > span:nth-child(3) {
-		background: red;
+		background: #fb5757;
 	}
 	.icons > span:hover {
 		filter: brightness(0.8);
+	}
+	.icons > span > img {
+		width: 25px;
+		height: 25px;
+		object-fit: scale-down;
+		filter: invert(1);
 	}
 	.testContainer {
 		border: 1px solid;
@@ -90,10 +95,10 @@
 		padding: 10px;
 		text-align: center;
 	}
-	.katchau > input:checked + label > span {
-		animation: piaoDoBau 0.5s infinite linear;
-		background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);
-	}
+	/*.katchau > input:checked + label > span {*/
+	/*	animation: piaoDoBau 0.5s infinite linear;*/
+	/*	background: linear-gradient(265deg, #073BE6, #2de807, #ffda00, #f00,#073BE9);*/
+	/*}*/
 	
 	@keyframes piaoDoBau {
 		0% {
