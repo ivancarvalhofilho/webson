@@ -200,10 +200,12 @@
 </div>
 
 <jsp:include page="../footer/footer.jsp"/>
+
 <div class="modal" style="display: none">
 	<div class="modalBody">
 	
 	</div>
 </div>
+
 </body>
 </html>

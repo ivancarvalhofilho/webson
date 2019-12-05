@@ -18,6 +18,6 @@
 
 <div class="footer">
 	<div>
-		Feito por <a href="https://github.com/ivancarvalhofilho">Ivan Carvalho</a> e <a href="https://github.com/DaniloGN">Danilo Guarizzo</a>
+		Feito usando Java, JQuery, JSP e SQL
 	</div>
 </div>
