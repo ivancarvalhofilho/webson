@@ -8,15 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c328873-fba8-4657-aaf3-a299ca9ccbe9" name="Default Changelist" comment="h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDBase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BDBase.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/InterviewerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/InterviewerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MysqlCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MysqlCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/answer/answerComponent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/answer/answerComponent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/interviewer/interviewerTestComponent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/interviewer/interviewerTestComponent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/tests/testComponent.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
